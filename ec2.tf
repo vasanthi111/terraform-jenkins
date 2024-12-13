@@ -43,7 +43,7 @@ resource "aws_instance" "public_subnet-1" {
 ami="ami-0166fe664262f664c"
 instance_type="t2.micro"
 count=1
-key_name="new-key"
+key_name="ec1"
 vpc_security_group_ids=["${aws_security_group.demosg.id}"]
 user_data="${file("userdata.sh")}"
 tags={
