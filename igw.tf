@@ -1,7 +1,3 @@
-provider "aws" {
-region = var.region
-}
-
 resource "aws_internet_gateway" "demogateway" {
 vpc_id="${aws_vpc.demovpc.id}"
 tags={
