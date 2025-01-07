@@ -39,7 +39,7 @@ Name="WEB SG"
 }
 }
 
-resource "aws_instance" "public_subnet-1" {
+resource "aws_instance" "public" {
 ami="ami-0ca9fb66e076a6e32"
 instance_type="t2.micro"
 count=1
